@@ -26,7 +26,7 @@ _The perfect task storage <sub><sup><sub>until you refresh the page<sub/><sup/><
 
 ## Links
 
-[The ToDo List](https://oko147.github.io/todo-list)
+[The ToDo List](https://oko147.github.io/todo-list-imm/)
 
 <hr>
 
