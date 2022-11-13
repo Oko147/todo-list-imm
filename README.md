@@ -35,3 +35,4 @@ _The perfect task storage <sub><sup><sub>until you refresh the page<sub/><sup/><
 - HTML
 - CSS
 - JavaScript
+- IMMUTABULITY
