@@ -1,0 +1,76 @@
+.tasks {
+  margin: 0;
+  padding: 15px;
+  list-style-type: none;
+  border-top: 2px solid #eee;
+}
+
+.headerButtons {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 14px;
+}
+
+.headerButtons:disabled {
+  cursor: not-allowed;
+  color: #bbb;
+}
+
+.headerButtons__buttons {
+  background-color: inherit;
+  color: #008080;
+}
+.header__tasks {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+
+.list__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid #ddd;
+  padding: 10px 0;
+}
+
+.list__content {
+  flex-grow: 1;
+}
+
+.list__content--done {
+  text-decoration: line-through;
+}
+
+.list__item--hidden {
+  display: none;
+}
+
+.list__button {
+  width: 30px;
+  height: 30px;
+  margin: 0 10px;
+  color: #fff;
+  border: none;
+  flex-shrink: 0;
+  transition: background-color 250ms ease-in-out;
+}
+.list__button--done {
+  cursor: pointer;
+  background-color: #008000;
+}
+
+.list__button--done:hover {
+  background-color: #00a000;
+}
+
+.list__button--remove {
+  cursor: pointer;
+  background-color: red;
+}
+
+.list__button--remove:hover {
+  background-color: #ff4d4d;
+}

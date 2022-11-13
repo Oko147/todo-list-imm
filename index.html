@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title" content="The ToDo List" />
+    <meta property="og:type" content="list" />
+    <meta property="og:image" content="img/ogimage.png" />
+    <meta property="og:url" content="https://oko147.github.io/todo-list/" />
+    <title>The ToDo List</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="img/icon.png" />
+    <link rel="stylesheet" href="css/form.css" />
+    <link rel="stylesheet" href="css/list.css" />
+    <link rel="stylesheet" href="css/section.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script defer src="javascript/script.js"></script>
+  </head>
+  <body class="body">
+    <header>
+      <h1 class="header">Lista zadań</h1>
+    </header>
+
+    <main>
+      <section class="section">
+        <h2 class="section__title">Dodaj nowe zadanie</h2>
+        <form class="js-form form">
+          <input
+            class="js-newTask form__newTask"
+            type="text"
+            placeholder="Co jest do zrobienia?"
+          />
+          <button class="form__newTask--button">Dodaj zadanie</button>
+        </form>
+      </section>
+
+      <section class="section">
+        <header class="header__tasks">
+          <h2 class="section__title">Lista zadań</h2>
+          <div class="headerButtons js-headerButtons"></div>
+        </header>
+
+        <ul class="js-tasks tasks"></ul>
+      </section>
+    </main>
+  </body>
+</html>
