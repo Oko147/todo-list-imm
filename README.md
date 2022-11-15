@@ -22,7 +22,7 @@ _The perfect task storage <sub><sup><sub>until you refresh the page<sub/><sup/><
 
 ### Gif for non-enligsh people
 
-![HowToUse](img/todolist.gif)
+![HowToUse](img/todolist-imm.gif)
 
 ## Links
 
