@@ -8,24 +8,45 @@
 .headerButtons {
   display: flex;
   flex-wrap: wrap;
-  font-size: 14px;
 }
 
-.headerButtons:disabled {
+@media (max-width: 600px) {
+  .headerButtons__buttons {
+    flex-basis: 100%;
+    margin: 10px;
+  }
+}
+
+.headerButtons__buttons:disabled {
   cursor: not-allowed;
-  color: #bbb;
+  color: #ddd;
 }
 
 .headerButtons__buttons {
   background-color: inherit;
   color: #008080;
+  border: inherit;
+  cursor: pointer;
+  transition: color 250ms;
 }
+
+.headerButtons__buttons:hover:enabled {
+  color: hsl(180, 100%, 35%);
+}
+
 .header__tasks {
   display: grid;
   grid-template-columns: auto auto;
   justify-content: space-between;
   align-items: center;
   padding: 15px;
+}
+
+@media (max-width: 600px) {
+  .header__tasks {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
 }
 
 .list__item {
