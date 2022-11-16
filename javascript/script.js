@@ -90,19 +90,19 @@
   const renderButtons = () => {
     const buttonsElement = document.querySelector(".js-headerButtons");
 
-    if (tasks.length) {
-      buttonsElement.innerHTML = `<button class="headerButtons__buttons js-hideDoneTasksButton">
+    if (!tasks.length) {
+      buttonsElement.innerHTML = ``;
+
+      return;
+    }
+
+    buttonsElement.innerHTML = `<button class="headerButtons__buttons js-hideDoneTasksButton">
               ${hideDoneTasks ? "Pokaż" : "Ukryj"} ukończone
             </button>
             <button class="headerButtons__buttons js-doneAllTasksButton"
             ${tasks.every(({ done }) => done) ? " disabled" : ""}>
               Ukończ wszystkie
             </button>`;
-
-      return;
-    }
-
-    buttonsElement.innerHTML = ``;
   };
 
   const bindButtonsEvents = () => {
